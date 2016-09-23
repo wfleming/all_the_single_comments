@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "All The Single Comments",
+  "version": "1.0",
+  "homepage_url": "https://github.com/wfleming/all_the_single_comments",
+
+  "description": "Get back a keyboard shortcut to add single comments on GitHub Pull Requests",
+
+  "content_scripts": [
+    {
+      "matches": [ "https://*.github.com/*/pull/*" ],
+      "js": [ "js/single_comment.js" ]
+    }
+  ]
+}
